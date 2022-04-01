@@ -38,4 +38,4 @@ jobs:
           - uses: actions/upload-artifact@v3
             with:
               name: Report
-              path: /home/runner/work/Covid19Cases/Covid19Cases/downloads
+              path: /home/runner/work/Covid19Cases/Covid19Cases/
