@@ -21,7 +21,7 @@ jobs:
     steps:
           - name: Step 1 - Create a temporary artifact downloads folder
             run: mkdir /home/runner/work/Covid19Cases/Covid19Cases/downloads
-            working-directory: ./downloads
+            #working-directory: ./downloads
           - name: checkout repo content
             uses: actions/checkout@v2 # checkout the repository content to github runner.
           - name: setup python
