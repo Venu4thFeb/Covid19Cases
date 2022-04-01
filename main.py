@@ -18,7 +18,7 @@ lc = pd.read_csv('./countries.txt')
 nw_dt=df.sort_values(['date','location'],ascending=False)
 for country in lc:
     
-    f_dt=nw_dt[nw_dt['continent']==country].groupby('location',as_index=True).agg(
+    f_dt=nw_dt[nw_dt['location']==country].groupby('location',as_index=True).agg(
     {
          'total_cases':sum, 
          'new_cases': sum,  
